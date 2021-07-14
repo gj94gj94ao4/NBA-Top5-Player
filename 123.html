@@ -9,6 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
@@ -105,9 +106,9 @@
               球星周邊
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Kobe Bryant</a></li>
               <li><a class="dropdown-item" href="#">LeBron James</a></li>
               <li><a class="dropdown-item" href="#">Stephen Curry</a></li>
-              <li><a class="dropdown-item" href="#">Kobe Bryant</a></li>
               <li>
                 <a class="dropdown-item" href="#">Giannis Antetokounmpo</a>
               </li>
@@ -138,138 +139,60 @@
   <div class="container-fluid px-0">
     <!-- section 1 -->
     <div class="container-1">
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-            aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-            aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-            aria-label="Slide 6"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
-            aria-label="Slide 7"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
-            aria-label="Slide 8"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
-            aria-label="Slide 9"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
-            aria-label="Slide 10"></button>
-        </div>
+        <!-- 投影片架構 -->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <!-- 圖片投影 元件1-->
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/img/kobe_01.jpg" class="d-block w-100" alt="..." />
+            <!-- 第一張圖片active -->
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img class="slide-pic" src="img1/S__40575059.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
+              <p>Some representative placeholder content for the first slide.</p>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="assets/img/kobe_02.jpg" class="d-block w-100" alt="..." />
+            <!-- 第二張圖片 -->
+          <div class="carousel-item" data-bs-interval="2000">
+            <img class="slide-pic" src="assets/img/kobe_02.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
+              <p>Some representative placeholder content for the second slide.</p>
             </div>
           </div>
+            <!-- 第三張圖片 -->
           <div class="carousel-item">
-            <img src="assets/img/lbj_01.jpg" class="d-block w-100" alt="..." />
+            <img class="slide-pic" src="assets/img/lbj_01.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/lbj_02.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/curry_01.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/curry_02.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/buck_01.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/buck_02.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/cp3_01.jfif" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/cp3_02.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev">
+        <!-- 左右按鈕 元件2 -->
+          <!-- 左邊按鈕 -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next">
+          <!-- 右邊按鈕 -->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
+        <!-- 指示按鈕 元件3 -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
       </div>
     </div>
-
+   
     <!-- section 2 -->
     <div class="container-fluid px-0">
       <div class="ratio ratio-16x9">
-        <iframe width="1920" height="1080" src="https://www.youtube-nocookie.com/embed/s0etaHYTW1M?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="1920" height="1080" src="https://www.youtube.com/embed/0r__MyVhlUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <!-- <video width="1920" height="1080" controls>
           <source src="./video/s2_video.mp4" type="video/mp4" />
         </video> -->
@@ -285,25 +208,25 @@
         <div class="row px-6" style="flex-wrap: nowrap; padding: 2rem; height: 70vh; min-height: 400px;">
           <div class="card mx-2 my-2 px-0" style="width: 16rem">
 
-            <div class="card-body px-0 py-0" style="background-image: url(https://priconne-redive.jp/ele-wp/wp-content/themes/redive/images/top/chara_09.png?=180131-1910);">
+            <div class="card-body px-0 py-0" style="background-image: url(./assets/img/buck_02.jpg);">
 
               <div class="d-flex flex-column justify-content-between align-items-center" style="height:100%; ">
 
                 <h5 class="card-title d-flex justify-content-center align-items-center text-light"
-                  style="background-color:rgba(70, 70, 70, 0.329); width: 100%; height: 20%;">キョウカ</h5>
-                <a href="#" class="btn btn-secondary mb-2">詳細ページ</a>
+                  style="background-color:rgba(70, 70, 70, 0.329); width: 100%; height: 20%;">Kobe Bryant</h5>
+                <a href="#" class="btn btn-secondary mb-2">詳細介紹</a>
               </div>
             </div>
           </div>
           <div class="card mx-2 my-2 px-0" style="width: 16rem">
 
-            <div class="card-body px-0 py-0" style="background-image: url(https://priconne-redive.jp/ele-wp/wp-content/themes/redive/images/character/chara_05_01.png?=180124-1600);">
+            <div class="card-body px-0 py-0" style="background-image: url(./img1/115765987_3068234016564992_8891094371854327459_n.jpg);">
 
               <div class="d-flex flex-column justify-content-between align-items-center" style="height:100%; ">
 
                 <h5 class="card-title d-flex justify-content-center align-items-center text-light"
-                  style="background-color:rgba(70, 70, 70, 0.329); width: 100%; height: 20%;">ミミ</h5>
-                <a href="#" class="btn btn-secondary mb-2">詳細ページ</a>
+                  style="background-color:rgba(70, 70, 70, 0.329); width: 100%; height: 20%;">Lebron James</h5>
+                <a href="#" class="btn btn-secondary mb-2">詳細介紹</a>
               </div>
             </div>
           </div>
@@ -314,8 +237,8 @@
               <div class="d-flex flex-column justify-content-between align-items-center" style="height:100%; ">
 
                 <h5 class="card-title d-flex justify-content-center align-items-center text-light"
-                  style="background-color:rgba(70, 70, 70, 0.329); width: 100%; height: 20%;">ユイ</h5>
-                <a href="#" class="btn btn-secondary mb-2">詳細ページ</a>
+                  style="background-color:rgba(70, 70, 70, 0.329); width: 100%; height: 20%;">Stephen Curry</h5>
+                <a href="#" class="btn btn-secondary mb-2">詳細介紹</a>
               </div>
             </div>
           </div>
@@ -326,8 +249,8 @@
               <div class="d-flex flex-column justify-content-between align-items-center" style="height:100%; ">
 
                 <h5 class="card-title d-flex justify-content-center align-items-center text-light"
-                  style="background-color:rgba(70, 70, 70, 0.329); width: 100%; height: 20%;">ヒヨリ</h5>
-                <a href="#" class="btn btn-secondary mb-2">詳細ページ</a>
+                  style="background-color:rgba(70, 70, 70, 0.329); width: 100%; height: 20%;">Giannis Antetokounmpo</h5>
+                <a href="#" class="btn btn-secondary mb-2">詳細介紹</a>
               </div>
             </div>
           </div>
@@ -338,8 +261,8 @@
               <div class="d-flex flex-column justify-content-between align-items-center" style="height:100%; ">
 
                 <h5 class="card-title d-flex justify-content-center align-items-center text-light"
-                  style="background-color:rgba(70, 70, 70, 0.329); width: 100%; height: 20%;">リン</h5>
-                <a href="#" class="btn btn-secondary mb-2">詳細ページ</a>
+                  style="background-color:rgba(70, 70, 70, 0.329); width: 100%; height: 20%;">Chris Paul</h5>
+                <a href="#" class="btn btn-secondary mb-2">詳細介紹</a>
               </div>
             </div>
           </div>
@@ -361,7 +284,7 @@
     <!-- section 4 -->
     <div class="container-fluid">
       <div class="row text-center">
-        <h2 class="my-3 px-0">消息</h2>
+        <h2 class="my-3 px-0">消息News</h2>
       </div>
       <div class="row">
         <div class="col-8">
@@ -400,7 +323,7 @@
               </div>
               <button type="button" class="btn btn-secondary" style="float: inline-end;">閱讀更多</button>
             </div>
-            <img class="img-fluid" src="https://fakeimg.pl/1920x1080/" alt="">
+            <img class="img-fluid" src="./assets/img/buck_02.jpg" alt="">
           </div>        </div>
       </div>
 
