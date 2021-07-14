@@ -18,9 +18,14 @@
 </head>
 
 <body>
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Logo</a>
+      <!-- <a class="navbar-brand" href="#">TOP 5 Player</a> -->
+      <a class="navbar-brand" href="#">
+        <img src="https://images4.imagebam.com/29/43/ec/ME1YQVK_o.jpg" alt="" width="40" height="32" class="d-inline-block align-text-top">
+        TOP 5 Player
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -31,7 +36,7 @@
             <a class="nav-link active" aria-current="page" href="#">球員介紹</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">消息</a>
+            <a class="nav-link" href="#">消息News</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -47,15 +52,7 @@
               </li>
               <li><a class="dropdown-item" href="#">Chris Paul</a></li>
               <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -67,139 +64,217 @@
       </div>
     </div>
   </nav>
-  <!-- margin: 4px; == ma-1 -->
+
   <!-- 這是主要的內容區塊 -->
   <div class="container-fluid px-0">
+
     <!-- section 1 -->
-    <div class="container-1">
-        <!-- 投影片架構 -->
-      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <!-- 圖片投影 元件1-->
-        <div class="carousel-inner">
-            <!-- 第一張圖片active -->
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img class="slide-pic" src="assets/img/kobe_01.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-            <!-- 第二張圖片 -->
-          <div class="carousel-item" data-bs-interval="2000">
-            <img class="slide-pic" src="assets/img/kobe_02.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-            <!-- 第三張圖片 -->
-          <div class="carousel-item">
-            <img class="slide-pic" src="assets/img/lbj_01.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
+    <!-- 投影片架構 -->
+    <div id="carouselExampleIndicators" class="carousel slide carousel-config" data-bs-ride="carousel"
+      data-bs-interval="false">
+      <!-- 圖片投影 元件1-->
+      <div class="carousel-inner">
+        <!-- 第一張圖片active -->
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img class="slide-pic" src="assets/img/kobe_01.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Kobe Bryant</h5>
+            <p>Los Angeles Lakers</p>
           </div>
         </div>
-        <!-- 左右按鈕 元件2 -->
-          <!-- 左邊按鈕 -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-          <!-- 右邊按鈕 -->
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        <!-- 指示按鈕 元件3 -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <!-- 第二張圖片 -->
+        <div class="carousel-item" data-bs-interval="2000">
+          <img class="slide-pic" src="assets/img/kobe_02.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Kobe Bryant</h5>
+            <p>Los Angeles Lakers</p>
+          </div>
         </div>
+        <!-- 第三張圖片 -->
+        <div class="carousel-item" data-bs-interval="2000">
+          <img class="slide-pic" src="assets/img/lbj_01.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>LeBron James</h5>
+            <p>Los Angeles Lakers</p>
+          </div>
+        </div>
+        <!-- 第四張圖片 -->
+        <div class="carousel-item" data-bs-interval="2000">
+          <img class="slide-pic" src="assets/img/lbj_02.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>LeBron James</h5>
+            <p>Los Angeles Lakers</p>
+          </div>
+        </div>
+        <!-- 第五張圖片 -->
+        <div class="carousel-item" data-bs-interval="2000">
+          <img class="slide-pic" src="assets/img/curry_01.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Stephen Curry</h5>
+            <p>Golden State Warriors</p>
+          </div>
+        </div>
+        <!-- 第六張圖片 -->
+        <div class="carousel-item" data-bs-interval="2000">
+          <img class="slide-pic" src="assets/img/curry_02.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Stephen Curry</h5>
+            <p>Golden State Warriors</p>
+          </div>
+        </div>
+        <!-- 第七張圖片 -->
+        <div class="carousel-item" data-bs-interval="2000">
+          <img class="slide-pic" src="assets/img/buck_01.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Giannis Antetokounmpo</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <!-- 第八張圖片 -->
+        <div class="carousel-item" data-bs-interval="2000">
+          <img class="slide-pic" src="https://images4.imagebam.com/06/8d/47/ME1YMHQ_o.jpg" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Giannis Antetokounmpo</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <!-- 第九張圖片 -->
+        <div class="carousel-item" data-bs-interval="2000">
+          <img class="slide-pic"
+            src="https://e0.365dm.com/21/06/2048x1152/skysports-nba-chris-paul-phoenix-suns_5408618.jpg"
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <!-- 第十張圖片 -->
+        <div class="carousel-item" data-bs-interval="2000">
+          <img class="slide-pic" src="assets/img/cp3_02.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <!-- 左右按鈕 元件2 -->
+      <!-- 左邊按鈕 -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <!-- 右邊按鈕 -->
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <!-- 指示按鈕 元件3 -->
+      <div class="carousel-indicators">
+
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+          aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+          aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+          aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+          aria-label="Slide 9"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+          aria-label="Slide 10"></button>
 
       </div>
     </div>
-   
-    <!-- section 2 -->
-    <div class="container-fluid px-0">
-      <div class="ratio ratio-16x9">
-        <iframe width="1920" height="1080" src="https://www.youtube.com/embed/0r__MyVhlUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!-- <video width="1920" height="1080" controls>
+  </div>
+
+
+  <!-- section 2 -->
+  <div class="container-fluid px-0">
+    <div class="ratio ratio-16x9">
+      <iframe width="1920" height="1080" src="https://www.youtube.com/embed/0r__MyVhlUA" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <!-- <video width="1920" height="1080" controls>
           <source src="./video/s2_video.mp4" type="video/mp4" />
         </video> -->
-      </div>
+    </div>
+  </div>
+
+  <!-- section 3 -->
+  <div class="container-fluid px-0 bg-light">
+    <div class="d-flex justify-content-center">
+      <h1>TOP5 球員介紹</h1>
     </div>
 
-    <!-- section 3 -->
-    <div class="container-fluid px-0 bg-light">
-      <div class="d-flex justify-content-center">
-        <h1>球員介紹</h1>
+
+    <div class="d-none d-xxl-flex row px-6 justify-content-around"
+      style="padding: 2rem; height: 70vh; min-height: 400px;">
+      <div class="card mx-2 my-2 px-0" style="width: 16rem">
+
+        <div class="card-body px-0 py-0" style="background-image: url(./assets/card-bg.jpg);">
+
+          <div class="d-flex flex-column justify-content-end align-items-center card-hover">
+
+            <h5 class="card-title d-flex justify-content-center align-items-center text-light">Kobe Bryant</h5>
+            <a href="#" class="btn btn-secondary mb-2">詳細介紹</a>
+          </div>
+        </div>
       </div>
-      <div class="overflow-auto">
-        <div class="row px-6" style="flex-wrap: nowrap; padding: 2rem; height: 70vh; min-height: 400px;">
-          <div class="card mx-2 my-2 px-0" style="width: 16rem">
+      <div class="card mx-2 my-2 px-0" style="width: 16rem">
 
-            <div class="card-body px-0 py-0" style="background-image: url(./assets/img/buck_02.jpg); background-position: 38% ​15%;">
+        <div class="card-body px-0 py-0" style="background-image: url(./assets/take3/BUCK34.jpg);">
 
-              <div class="d-flex flex-column justify-content-between align-items-center" style="height:100%; ">
+          <div class="d-flex flex-column justify-content-end align-items-center card-hover">
 
-                <h5 class="card-title d-flex justify-content-center align-items-center text-light"
-                  style="background-color:rgba(70, 70, 70, 0.329); width: 100%; height: 20%;">Kobe Bryant</h5>
-                <a href="#" class="btn btn-secondary mb-2">詳細介紹</a>
-              </div>
-            </div>
+            <h5 class="card-title d-flex justify-content-center align-items-center text-light">Giannis Antetokounmpo
+            </h5>
+            <a href="#" class="btn btn-secondary mb-2">詳細介紹</a>
           </div>
-          <div class="card mx-2 my-2 px-0" style="width: 16rem">
+        </div>
+      </div>
+      <div class="card mx-2 my-2 px-0" style="width: 16rem">
 
-            <div class="card-body px-0 py-0" style="background-image: url(./img1/115765987_3068234016564992_8891094371854327459_n.jpg);">
+        <div class="card-body px-0 py-0" style="background-image: url(./assets/take3/cp3.jpg);">
 
-              <div class="d-flex flex-column justify-content-between align-items-center" style="height:100%; ">
+          <div class="d-flex flex-column justify-content-end align-items-center card-hover">
 
-                <h5 class="card-title d-flex justify-content-center align-items-center text-light"
-                  style="background-color:rgba(70, 70, 70, 0.329); width: 100%; height: 20%;">Lebron James</h5>
-                <a href="#" class="btn btn-secondary mb-2">詳細介紹</a>
-              </div>
-            </div>
+            <h5 class="card-title d-flex justify-content-center align-items-center text-light">Chris Paul</h5>
+            <a href="#" class="btn btn-secondary mb-2">詳細介紹</a>
           </div>
-          <div class="card mx-2 my-2 px-0" style="width: 16rem">
+        </div>
+      </div>
+      <div class="card mx-2 my-2 px-0" style="width: 16rem">
 
-            <div class="card-body px-0 py-0" style="background-image: url(https://priconne-redive.jp/ele-wp/wp-content/themes/redive/images/character/chara_02_02.png?=180124-1600);">
+        <div class="card-body px-0 py-0" style="background-image: url(./assets/take3/LBJ.jpg);">
 
-              <div class="d-flex flex-column justify-content-between align-items-center" style="height:100%; ">
+          <div class="d-flex flex-column justify-content-end align-items-center card-hover">
 
-                <h5 class="card-title d-flex justify-content-center align-items-center text-light"
-                  style="background-color:rgba(70, 70, 70, 0.329); width: 100%; height: 20%;">Stephen Curry</h5>
-                <a href="#" class="btn btn-secondary mb-2">詳細介紹</a>
-              </div>
-            </div>
+            <h5 class="card-title d-flex justify-content-center align-items-center text-light">Lebron James</h5>
+            <a href="#" class="btn btn-secondary mb-2">詳細介紹</a>
           </div>
-          <div class="card mx-2 my-2 px-0" style="width: 16rem">
+        </div>
+      </div>
+      <div class="card mx-2 my-2 px-0" style="width: 16rem">
 
-            <div class="card-body px-0 py-0" style="background-image: url(https://priconne-redive.jp/ele-wp/wp-content/themes/redive/images/character/chara_02_01.png?=180124-1600);">
+        <div class="card-body px-0 py-0" style="background-image: url(./assets/take3/CURRY.jpg);">
 
-              <div class="d-flex flex-column justify-content-between align-items-center" style="height:100%; ">
+          <div class="d-flex flex-column justify-content-end align-items-center card-hover">
 
-                <h5 class="card-title d-flex justify-content-center align-items-center text-light"
-                  style="background-color:rgba(70, 70, 70, 0.329); width: 100%; height: 20%;">Giannis Antetokounmpo</h5>
-                <a href="#" class="btn btn-secondary mb-2">詳細介紹</a>
-              </div>
-            </div>
+            <h5 class="card-title d-flex justify-content-center align-items-center text-light">Stephen Curry</h5>
+            <a href="#" class="btn btn-secondary mb-2">詳細介紹</a>
           </div>
-          <div class="card mx-2 my-2 px-0" style="width: 16rem">
-
-            <div class="card-body px-0 py-0" style="background-image: url(https://priconne-redive.jp/ele-wp/wp-content/themes/redive/images/top/chara_09.png?=180131-1910);">
-
-              <div class="d-flex flex-column justify-content-between align-items-center" style="height:100%; ">
-
-                <h5 class="card-title d-flex justify-content-center align-items-center text-light"
-                  style="background-color:rgba(70, 70, 70, 0.329); width: 100%; height: 20%;">Chris Paul</h5>
-                <a href="#" class="btn btn-secondary mb-2">詳細介紹</a>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="card mx-2 my-2" style="width: 18rem">
+        </div>
+      </div>
+      <!-- <div class="card mx-2 my-2" style="width: 18rem">
             <img src="https://fakeimg.pl/350x200/" class="card-img-top" alt="img" />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -210,147 +285,264 @@
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div> -->
+    </div>
+
+
+    <div class="d-xxl-none overflow-auto">
+      <div class="row px-6" style="flex-wrap: nowrap; padding: 2rem; height: 70vh; min-height: 400px;">
+        <div class="card mx-2 my-2 px-0" style="width: 16rem">
+
+          <div class="card-body px-0 py-0" style="background-image: url(./assets/card-bg.jpg);">
+
+            <div class="d-flex flex-column justify-content-end align-items-center card-hover">
+
+              <h5 class="card-title d-flex justify-content-center align-items-center text-light">Kobe Bryant</h5>
+              <a href="#" class="btn btn-secondary mb-2">詳細介紹</a>
+            </div>
+          </div>
+        </div>
+        <div class="card mx-2 my-2 px-0" style="width: 16rem">
+
+          <div class="card-body px-0 py-0" style="background-image: url(./assets/take3/BUCK34.jpg);">
+
+            <div class="d-flex flex-column justify-content-end align-items-center card-hover">
+
+              <h5 class="card-title d-flex justify-content-center align-items-center text-light">Giannis Antetokounmpo
+              </h5>
+              <a href="#" class="btn btn-secondary mb-2">詳細介紹</a>
+            </div>
+          </div>
+        </div>
+        <div class="card mx-2 my-2 px-0" style="width: 16rem">
+
+          <div class="card-body px-0 py-0" style="background-image: url(./assets/take3/cp3.jpg);">
+
+            <div class="d-flex flex-column justify-content-end align-items-center card-hover">
+
+              <h5 class="card-title d-flex justify-content-center align-items-center text-light">Chris Paul</h5>
+              <a href="#" class="btn btn-secondary mb-2">詳細介紹</a>
+            </div>
+          </div>
+        </div>
+        <div class="card mx-2 my-2 px-0" style="width: 16rem">
+
+          <div class="card-body px-0 py-0" style="background-image: url(./assets/take3/LBJ.jpg);">
+
+            <div class="d-flex flex-column justify-content-end align-items-center card-hover">
+
+              <h5 class="card-title d-flex justify-content-center align-items-center text-light">Lebron James</h5>
+              <a href="#" class="btn btn-secondary mb-2">詳細介紹</a>
+            </div>
+          </div>
+        </div>
+        <div class="card mx-2 my-2 px-0" style="width: 16rem">
+
+          <div class="card-body px-0 py-0" style="background-image: url(./assets/take3/CURRY.jpg);">
+
+            <div class="d-flex flex-column justify-content-end align-items-center card-hover">
+
+              <h5 class="card-title d-flex justify-content-center align-items-center text-light">Stephen Curry</h5>
+              <a href="#" class="btn btn-secondary mb-2">詳細介紹</a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="card mx-2 my-2" style="width: 18rem">
+            <img src="https://fakeimg.pl/350x200/" class="card-img-top" alt="img" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- section 4 -->
+  <div class="container-fluid">
+    <div class="row text-center">
+      <h2 class="my-3 px-0">消息News</h2>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <div style="position:relative;">
+          <div class="news-info-b">
+            <div class="header">
+              <div class="title fs-3">LeBron James ：不管能再打多少年，真心希望最後在湖人退役</div>
+              <div class="sub-title fs-6">
+                <p>BY 松江路林安可 2021-07-13</p>
+              </div>
+              <p>
+                最近LeBron在接受採訪時則向湖人表達了忠誠。LeBron表示，不管自己的職業生涯還剩下幾年，他都真心希望能夠在湖人一直效力到退役。「我真心希望能夠在湖人結束職業生涯。」LeBron說，「不管我還能再打幾年，4年、5年、6年、7年，無論...
+              </p>
+            </div>
+            <button type="button" class="btn btn-secondary" style="float: inline-end;">閱讀更多</button>
+          </div>
+          <img class="img-fluid" src="assets/PLAYER/LBJ/LBJ06.jpg" alt="">
+        </div>
+
+
+
+      </div>
+      <div class="d-none d-lg-flex col-lg-4 d-flex flex-column justify-content-between">
+        <div style="position: relative;">
+          <div class="news-info-s">
+            <div class="header">
+              <div class="title fs-3">浪花三兄弟！勇士內部討論過交易得到Lillard的想法</div>
+              <div class="sub-title fs-6">
+                <p>
+                  BY 松江路林安可 2021-07-12
+                </p>
+                <p>
+                  根據美國媒體的報導表示，消息人士透露，勇士隊內部討論過關於得到Damian Lillard的想法...
+                </p>
+              </div>
+            </div>
+            <button type="button" class="btn btn-secondary" style="float: inline-end;">閱讀更多</button>
+          </div>
+          <img class="img-fluid" src="assets/PLAYER/CURRY/CURRY08.jpg" alt="">
+        </div>
+
+
+        <div style="position: relative;">
+          <div class="news-info-s">
+            <div class="header">
+              <div class="title fs-3">不怕立FLAG？字母哥：下賽季目標罰球命中率提升至「80%」以上</div>
+              <div class="sub-title fs-6">
+                <p>BY 松江路林安可 2021-07-12</P>
+                <p>公鹿球星字母哥說：「我不想去關注人們如何評價我的比賽，也不想關注他們認為我該怎麼打。但有關比賽的問題一直就在我腦海...</p>
+              </div>
+            </div>
+            <button type="button" class="btn btn-secondary" style="float: inline-end;">閱讀更多</button>
+          </div>
+          <img class="img-fluid" src="./assets/PLAYER/BUCK34/BUCKS10.jpg" alt="">
         </div>
       </div>
     </div>
 
-    <!-- section 4 -->
-    <div class="container-fluid">
-      <div class="row text-center">
-        <h2 class="my-3 px-0">消息News</h2>
-      </div>
-      <div class="row">
-        <div class="col-8">
-          <div style="position:relative;">
-            <div class="news-info-b">
-              <div class="header">
-                <div class="title fs-3">我是新聞標題喔喔喔</div>
-                <div class="sub-title fs-5">Something</div>
-              </div>
-              <button type="button" class="btn btn-secondary" style="float: inline-end;">閱讀更多</button>
-            </div>
-            <img class="img-fluid" src="https://fakeimg.pl/1920x1080/" alt="">
-          </div>
+    <!-- 增加間隔 -->
+    <!-- <div class="row mt-5"></div> -->
 
+    <div class="row mt-5">
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card" style="width: 100%; ">
+          <img src="https://images4.imagebam.com/14/a2/7b/ME1YMZU_o.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">有他在還是贏不了！Scott Foster執法CP3又輸球已遭遇12敗。
+            <p>
+              BY 編輯部 2021-07-12
+            </p>
 
-
-        </div>
-        <div class="col-4 d-flex flex-column justify-content-between">
-          <div style="position: relative;">
-            <div class="news-info-s">
-              <div class="header">
-                <div class="title fs-3">我是新聞標題喔喔喔</div>
-                <div class="sub-title fs-5">Something</div>
-              </div>
-              <button type="button" class="btn btn-secondary" style="float: inline-end;">閱讀更多</button>
-            </div>
-            <img class="img-fluid" src="https://fakeimg.pl/1920x1080/" alt="">
-          </div>
-
-
-          <div style="position: relative;">
-            <div class="news-info-s">
-              <div class="header">
-                <div class="title fs-3">我是新聞標題喔喔喔</div>
-                <div class="sub-title fs-5">Something</div>
-              </div>
-              <button type="button" class="btn btn-secondary" style="float: inline-end;">閱讀更多</button>
-            </div>
-            <img class="img-fluid" src="./assets/img/buck_02.jpg" alt="">
-          </div>        </div>
-      </div>
-
-      <!-- 增加間隔 -->
-      <!-- <div class="row mt-5"></div> -->
-
-      <div class="row mt-5">
-        <div class="col-3">
-          <div class="card" style="width: 100%; ">
-            <img src="https://fakeimg.pl/300x200/" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content. <a href="#">read more... </a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="card" style="width: 100%; ">
-            <img src="https://fakeimg.pl/300x200/" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content. <a href="#">read more... </a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="card" style="width: 100%; ">
-            <img src="https://fakeimg.pl/300x200/" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content. <a href="#">read more... </a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="card" style="width: 100%; ">
-            <img src="https://fakeimg.pl/300x200/" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content. <a href="#">read more... </a></p>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-      <div class="row mt-3">
-        <div class="col-3">
-          <div class="card" style="width: 100%; ">
-            <img src="https://fakeimg.pl/300x200/" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content. <a href="#">read more... </a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="card" style="width: 100%; ">
-            <img src="https://fakeimg.pl/300x200/" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content. <a href="#">read more... </a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="card" style="width: 100%; ">
-            <img src="https://fakeimg.pl/300x200/" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content. <a href="#">read more... </a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="card" style="width: 100%; ">
-            <img src="https://fakeimg.pl/300x200/" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content. <a href="#">read more... </a></p>
-            </div>
+            <a href="#">read more... </a></p>
           </div>
         </div>
       </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card" style="width: 100%; ">
+          <img src="https://images4.imagebam.com/e0/91/23/ME1YQ4X_o.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">字母哥41+13+6屠殺禁區　公鹿20分差痛宰太陽總冠軍賽終於開胡
+            <p>
+              BY 編輯部 2021-07-12
+            </p>
+
+            <a href="#">read more... </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-md-block col-md-4 col-lg-3">
+        <div class="card" style="width: 100%; ">
+          <img src="https://images4.imagebam.com/85/6a/70/ME1YQ50_o.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">公鹿G3第二節後半打出30-9攻勢　半場60-45大幅領先太陽
+            <p>
+              BY 編輯部 2021-07-12
+            </p>
+            <a href="#">read more... </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-lg-block col-3">
+        <div class="card" style="width: 100%; ">
+          <img src="https://images4.imagebam.com/2d/ea/df/ME1YQDY_o.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Curry再度榮獲ESPY最佳NBA球員，六年內第二度獲獎肯定!
+            <p>
+              BY 編輯部 2021-07-11
+            </p>
+            <a href="#">read more... </a></p>
+          </div>
+        </div>
+      </div>
+
+
     </div>
 
-    <!-- 頁尾 -->
-    <footer class="footer mt-auto py-3 bg-light">
-      <div class="container">
-        <span class="text-muted">
-          NBATOP5 Player © Copyright 2021 0720 朝亦.程倫.家軍. All Rights
-          Reserved.</span>
+    <div class="row mt-3">
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card" style="width: 100%; ">
+          <img src="https://images4.imagebam.com/32/91/cf/ME1YQ52_o.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">字母哥鳳凰城飯店弄丟鑰匙請求櫃台協助，櫃台人員居然不認識他詢問他大名
+            <p>
+              BY 編輯部 2021-07-11
+            </p>
+            <a href="#">read more... </a></p>
+          </div>
+        </div>
       </div>
-    </footer>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card" style="width: 100%; ">
+          <img src="https://images4.imagebam.com/c5/e2/9e/ME1YQ53_o.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">看好好兄弟奪冠!!詹皇：CP3打總冠軍賽我很激動，太陽更加健康佔據優勢
+            <p>
+              BY 編輯部 2021-07-11
+            </p>
+            <a href="#">read more... </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-md-block col-md-4 col-lg-3">
+        <div class="card" style="width: 100%; ">
+          <img src="https://images4.imagebam.com/d2/ec/86/ME1YQIJ_o.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">基本功扎實！太陽罰球命中率創25年來新高，本賽季兩隊進入前二！
+            <p>
+              BY 編輯部 2021-07-10
+            </p>
+            <a href="#">read more... </a></p>
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-lg-block col-3">
+        <div class="card" style="width: 100%; ">
+          <img src="https://images4.imagebam.com/44/8a/6c/ME1YPN3_o.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">0-2落後奪冠史上僅4隊　Middleton：我們要像太陽一樣捍衛主場
+            <p>
+              BY 編輯部 2021-07-09
+            </p>
+            <a href="#">read more... </a></p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- 頁尾 -->
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <span class="text-muted">
+        NBATOP5 Player © Copyright 2021 0720 朝亦.程倫.家軍. All Rights
+        Reserved.</span>
+    </div>
+  </footer>
 </body>
 
 </html>
