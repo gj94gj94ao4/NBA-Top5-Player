@@ -1,0 +1,77 @@
+  /* sectuion 1 */
+  .container-1 {
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* section 3 */
+  .card .card-body{
+    background-position: center 15%;
+    background-size: cover;
+    
+  }
+
+
+  /* in section 4 */
+  /* father must be relative */
+  
+  .news-info-b {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .3);
+    color: white;
+    width: 100%;
+    height: 100%;
+  }
+
+  .news-info-b:hover {
+    opacity: 1;
+    transition: opacity 0.8s;
+  }
+
+  .news-info-b .title {
+    font-weight: 700;
+  }
+
+  .news-info-b .sub-title {
+    color: rgb(70, 70, 70);
+  }
+
+  .news-info-s {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 3%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .3);
+    color: white;
+    width: 100%;
+    height: 100%;
+  }
+
+  .news-info-s:hover {
+    opacity: 1;
+    transition: opacity 0.8s;
+  }
+
+  .news-info-s .title {
+    font-weight: 400;
+  }
+
+  .news-info-s .sub-title {
+    color: rgb(70, 70, 70);
+  }
