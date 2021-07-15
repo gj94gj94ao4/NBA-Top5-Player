@@ -9,7 +9,7 @@ pages:
   script:
     - mkdir .public
     - cp -r * .public
-    - mv .public/123.html index.html
+    - mv .public/123.html ./public/index.html
     - mv .public public
   artifacts:
     paths:
