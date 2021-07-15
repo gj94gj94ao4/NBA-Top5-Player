@@ -14,7 +14,7 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
 
-  <title>Document</title>
+  <title>NBA TOP 5 Player</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <!-- <a class="navbar-brand" href="#">TOP 5 Player</a> -->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/">
         <img src="https://images4.imagebam.com/29/43/ec/ME1YQVK_o.jpg" alt="" width="40" height="32" class="d-inline-block align-text-top">
         TOP 5 Player
       </a>
@@ -32,35 +32,36 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">球員介紹</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">消息News</a>
-          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
-              球星周邊
+              球員介紹
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Kobe Bryant</a></li>
-              <li><a class="dropdown-item" href="#">LeBron James</a></li>
-              <li><a class="dropdown-item" href="#">Stephen Curry</a></li>
+              <li><a class="dropdown-item" href="./pages/kobe.html">Kobe Bryant</a></li>
+              <li><a class="dropdown-item" href="./pages/lebron.html">LeBron James</a></li>
+              <li><a class="dropdown-item" href="./pages/curry.html">Stephen Curry</a></li>
               <li>
-                <a class="dropdown-item" href="#">Giannis Antetokounmpo</a>
+                <a class="dropdown-item" href="./pages/giannis.html">Giannis Antetokounmpo</a>
               </li>
-              <li><a class="dropdown-item" href="#">Chris Paul</a></li>
+              <li><a class="dropdown-item" href="./pages/cp3.html">Chris Paul</a></li>
               <li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">球星周邊</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#news">消息News</a>
+          </li>
+          
         </ul>
-        <form class="d-flex">
+        <!-- <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
           <button class="btn btn-outline-success" type="submit">
             Search
           </button>
-        </form>
+        </form> -->
       </div>
     </div>
   </nav>
@@ -76,7 +77,7 @@
       <div class="carousel-inner">
         <!-- 第一張圖片active -->
         <div class="carousel-item active" data-bs-interval="2000">
-          <img class="slide-pic" src="assets/img/kobe_01.jpg" class="d-block w-100" alt="...">
+          <img class="slide-pic" src="https://image-resizer.cwg.tw/resize/uri/https%3A%2F%2Fi.cheers.com.tw%2Farticle%2F202002%2Farticle-5e539484697a7.jpg/?w=810&h=543&fit=fill" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Kobe Bryant</h5>
             <p>Los Angeles Lakers</p>
@@ -212,8 +213,8 @@
   <!-- section 3 -->
   <div class="container-fluid px-0 bg-light">
     <div class="d-flex justify-content-center">
-      <h1>TOP5 球員介紹</h1>
-    </div>
+      <div class="row mt-5"><h1>TOP5 球員介紹</h1></div>
+          </div>
 
 
     <div class="d-none d-xxl-flex row px-6 justify-content-around"
@@ -362,10 +363,12 @@
   </div>
 
   <!-- section 4 -->
-  <div class="container-fluid">
+  <div id="news" class="container-fluid">
     <div class="row text-center">
-      <h2 class="my-3 px-0">消息News</h2>
+      <!-- <h2 class="my-3 px-0">消息News</h2>  -->
+      <div class="row mt-5"><h1>消息News</h1></div>
     </div>
+    <div class="row mt-5"></div>
     <div class="row">
       <div class="col-12 col-lg-8">
         <div style="position:relative;">
@@ -391,7 +394,7 @@
         <div style="position: relative;">
           <div class="news-info-s">
             <div class="header">
-              <div class="title fs-3">浪花三兄弟！勇士內部討論過交易得到Lillard的想法</div>
+              <div class="title fs-5">浪花三兄弟！勇士內部討論過交易得到Lillard的想法</div>
               <div class="sub-title fs-6">
                 <p>
                   BY 松江路林安可 2021-07-12
@@ -410,10 +413,10 @@
         <div style="position: relative;">
           <div class="news-info-s">
             <div class="header">
-              <div class="title fs-3">不怕立FLAG？字母哥：下賽季目標罰球命中率提升至「80%」以上</div>
+              <div class="title fs-5">不怕立FLAG？字母哥：下賽季目標罰球命中率提升至「80%」以上</div>
               <div class="sub-title fs-6">
                 <p>BY 松江路林安可 2021-07-12</P>
-                <p>公鹿球星字母哥說：「我不想去關注人們如何評價我的比賽，也不想關注他們認為我該怎麼打。但有關比賽的問題一直就在我腦海...</p>
+                <p>公鹿球星字母哥說：「我不想去關注人們如何評價我的比賽，也不想關注他們認為我該怎麼打...</p>
               </div>
             </div>
             <button type="button" class="btn btn-secondary" style="float: inline-end;">閱讀更多</button>
@@ -536,11 +539,36 @@
   </div>
 
   <!-- 頁尾 -->
-  <footer class="footer mt-auto py-3 bg-light">
-    <div class="container">
-      <span class="text-muted">
-        NBATOP5 Player © Copyright 2021 0720 朝亦.程倫.家軍. All Rights
-        Reserved.</span>
+  <footer class="bg-dark text-center text-white mt-3">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section>
+        <!-- ig -->
+        <a class=" btn-floating m-1" href="#!" role="button"
+          ><img src="https://images4.imagebam.com/5d/d2/d8/ME202PR_o.png" width="30"></i
+        ></a>
+  
+        <!--  -->
+        <a class=" btn-floating m-1" href="#!" role="button"
+          ><img src="https://images4.imagebam.com/7f/54/d2/ME2030Q_o.png" width="30"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class=" btn-floating m-1" href="#!" role="button"
+          ><img src="https://images4.imagebam.com/69/bc/90/ME20326_o.png" width="30"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class=" btn-floating m-1" href="#!" role="button"
+          ><img src="https://images4.imagebam.com/bc/3e/04/ME2033B_o.png" width="30"></i
+        ></a>
+        </a>
+        <div class="main-footer text-center p-3  ">
+        <p>NBA TOP5 Player © Copyright 20210720 Titor. Jeffrey. JA. All Rights Reserved.</p>
+        </div>
+      </section>
+      <!-- Section: Social media -->
     </div>
   </footer>
 </body>
