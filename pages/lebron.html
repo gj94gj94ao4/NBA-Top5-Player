@@ -50,16 +50,17 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><strong>球星周邊</strong></a>
+            <a class="nav-link" href="/commodity/shop.html"><strong>球星周邊</strong></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/#news"><strong>消息News</strong></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/mesg.html"><strong>客服中心</strong></a>
-          </li>
+          
         </ul>
         <div class="d-flex align-items-center mb-0">
+          <button class="btn btn-outline-danger me-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#mesgus">
+            聯絡我們
+          </button>
           <button class="btn btn-outline-success me-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#register">
             註冊
           </button>
@@ -72,6 +73,43 @@
   </nav>
 
   <!-- nav bar additional area -->
+
+  <!-- mesg us -->
+  <div id="mesgus" class="modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header justify-content-center">
+          <h3 class="modal-title">聯絡我們</h5>
+        </div>
+        <div class="modal-body">
+          <form action="post">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required
+                autofocus>
+              <label for="floatingInput">電子信箱</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+              <label for="floatingPassword">暱稱</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control mb-3" id="reFloatingPassword" placeholder="Retype Password"
+                required>
+              <label for="reFloatingPassword">給予我們意見</label>
+            </div>
+
+            
+            
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+          <button type="button" class="btn btn-success">送出</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- register modal -->
   <div id="register" class="modal fade" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -112,6 +150,7 @@
 
         </div>
         <div class="modal-footer">
+          
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
           <button type="button" class="btn btn-success">註冊</button>
         </div>
@@ -221,7 +260,7 @@
   <div class="container-fluid px-0">
     <div class="container-fluid px-0">
       <div class="ratio ratio-16x9">
-        <iframe width="1920" height="1080" src="https://www.youtube.com/embed/rBW1uZnZhbo" title="YouTube video player"
+        <iframe width="1920" height="1080" src="https://www.youtube.com/embed/BkMixGa8ei0" title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>

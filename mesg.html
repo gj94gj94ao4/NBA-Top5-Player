@@ -73,11 +73,12 @@
           <li class="nav-item">
             <a class="nav-link" href="/#news"><strong>消息News</strong></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/mesg.html"><strong>客服中心</strong></a>
-          </li>
+         
         </ul>
         <div class="d-flex align-items-center mb-0">
+          <button class="btn btn-outline-danger me-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#mesgus">
+            聯絡我們
+          </button>
           <button class="btn btn-outline-success me-2 py-1 px-3" data-bs-toggle="modal" data-bs-target="#register">
             註冊
           </button>
@@ -88,4 +89,137 @@
       </div>
     </div>
   </nav>
+   <!-- nav bar additional area -->
+<!-- mesg us -->
+<div id="mesgus" class="modal fade" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header justify-content-center">
+        <h3 class="modal-title">聯絡我們</h5>
+      </div>
+      <div class="modal-body">
+        <form action="post">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required
+              autofocus>
+            <label for="floatingInput">電子信箱</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+            <label for="floatingPassword">暱稱</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control mb-3" id="reFloatingPassword" placeholder="Retype Password"
+              required>
+            <label for="reFloatingPassword">給予我們意見</label>
+          </div>
+
+          
+          
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+        <button type="button" class="btn btn-success">送出</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- register modal -->
+<div id="register" class="modal fade" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header justify-content-center">
+        <h3 class="modal-title">會員註冊</h5>
+      </div>
+      <div class="modal-body">
+        <form action="post">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required
+              autofocus>
+            <label for="floatingInput">電子信箱</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+            <label for="floatingPassword">密碼</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control mb-3" id="reFloatingPassword" placeholder="Retype Password"
+              required>
+            <label for="reFloatingPassword">重新輸入密碼</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              同意<a href="http://">會員條款</a>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              同意個資蒐集使用，增進個人體驗，請見<a href="http://">個資使用條款</a>。
+            </label>
+          </div>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+        <button type="button" class="btn btn-success">註冊</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- login modal -->
+<div id="login" class="modal fade" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header justify-content-center">
+        <h3 class="modal-title">會員登入</h5>
+      </div>
+      <div class="modal-body">
+        <form action="post">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required
+              autofocus>
+            <label for="floatingInput">電子信箱</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+            <label for="floatingPassword">密碼</label>
+          </div>
+
+          <div class="d-flex">
+            <div class="form-check me-auto">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                記住我
+              </label>
+            </div>
+            <a href="">忘記密碼？</a>
+          </div>
+
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+        <button type="button" class="btn btn-primary px-auto">登入</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
+        </form> -->
+    </div>
+  </div>
+</nav>
 </body>
