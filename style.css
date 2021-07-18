@@ -5,7 +5,12 @@
   position: fixed;
   z-index: 5;
 }
-
+/* .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: .7;
+} */
 
 
 /* sectuion 1 */
@@ -17,6 +22,7 @@
   min-height: 600px;
 }
 
+
 .carousel-config .carousel-inner {
   height: 100%;
   width: 100%;
@@ -26,7 +32,6 @@
   height: 100%;
   width: 100%;
 }
-
 .carousel-config .slide-pic {
   object-fit: cover;
   width: 100%;

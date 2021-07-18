@@ -225,90 +225,152 @@
         </div>
       </div>
     </common-area>
-  <!--這是主要的內容區塊 -->
-  <div class="container pages">
-    <div class="row text-center mx-0 banner animate-area" style="background-image: url(https://images4.imagebam.com/61/cd/b4/ME22VO0_o.jpg);
-      background-position: 80% 3%;
-      background-repeat: no-repeat;
-      height: 85vh ;
-      min-height: 100px;
-      ">
 
-      <div class="col-6 text-white">
-      </div>
-      <div class="col-6 text-white text-end">
-        <!-- <div class="animate-area"> -->
-        <div class="mx-5 px-10" style="line-height: 40px;">
-          <h1 class="animate-area">Chris Paul</h1>
-          <h1 class="animate-area" style="animation-delay: 0.1s;">克里斯·保羅</h1>
-          <p class="animate-area" style="animation-delay: 0.2s;">出生 1985年5月6日（36歲）</p>
-          <p class="animate-area" style="animation-delay: 0.3s;">身高 6英尺0英寸（1.83米）體重	175磅（79公斤）</p>
-          <p class="animate-area" style="animation-delay: 0.4s;">現效力於NBA鳳凰城太陽。2021年3月22日，對陣洛杉磯湖人時完成生涯第10000次助攻，
-            成為NBA上第6位達成的球員，該場保羅繳出11分10籃板13助攻的大三元成績單( 生涯第16次、本季首次 )，
-            帶領太陽以111:94擊敗湖人。同時也是NBA史上第1位完成20000分+10000次助攻的球員。</p>
-        
+
+
+  <div class="container-fluid" style="margin-top: 100px;">
+    <div class="row gx-5 gy-2">
+      <script>
+        let items = [
+          {
+            // 1
+            imgurl: "https://images4.imagebam.com/ca/03/e5/ME24UMV_o.jpg",
+            name: "123水壺",
+            description: "可以裝水",
+            price: "999"
+          },
+          {// 2
+            imgurl: "https://images4.imagebam.com/d6/57/b8/ME24UN7_o.jpg",
+            name: "",
+            description: "",
+            price: ""
+          },
+          {// 3
+            imgurl: "https://images4.imagebam.com/8a/08/92/ME24UPH_o.jpg",
+            name: "",
+            description: "",
+            price: ""
+          },
+          {// 4
+            imgurl: "https://images4.imagebam.com/d5/97/a8/ME24UUQ_o.jpg",
+            name: "",
+            description: "",
+            price: ""
+          },
+          {// 5
+            imgurl: "https://images4.imagebam.com/14/bc/f9/ME24UWM_o.jpg",
+            name: "",
+            description: "",
+            price: ""
+          },
+          {// 6
+            imgurl: "https://images4.imagebam.com/6f/8d/17/ME24UD0_o.jpg",
+            name: "",
+            description: "",
+            price: ""
+          },
+          {// 7
+            imgurl: "https://images4.imagebam.com/c1/6a/d1/ME24UWO_o.jpg",
+            name: "",
+            description: "",
+            price: ""
+          },
+          {// 8
+            imgurl: "https://images4.imagebam.com/d3/b1/e4/ME24UXQ_o.jpg",
+            name: "",
+            description: "",
+            price: ""
+          },
+          {// 9
+            imgurl: "https://images4.imagebam.com/f1/66/05/ME24UY8_o.jpg",
+            name: "",
+            description: "",
+            price: ""
+          },
+          {// 10
+            imgurl: "https://images4.imagebam.com/6f/8d/17/ME24UD0_o.jpg",
+            name: "",
+            description: "",
+            price: ""
+          },
+          {// 11
+            imgurl: "https://images4.imagebam.com/6f/8d/17/ME24UD0_o.jpg",
+            name: "",
+            description: "",
+            price: ""
+          },
+          {// 12
+            imgurl: "https://images4.imagebam.com/6f/8d/17/ME24UD0_o.jpg",
+            name: "",
+            description: "",
+            price: ""
+          },
+        ]
+        let sel_row = document.querySelector('body > div.container-fluid > div');
+
+        for (const item of items) {
+          let img = document.createElement('img')
+          img.classList.add('w-100')
+          img.src = item.imgurl
+          img.alt = 'image'
+          let paragraph = document.createElement('p')
+          paragraph.innerText = item.description
+          let div_item = document.createElement('div')
+          div_item.classList.add('item')
+          div_item.appendChild(img)
+          div_item.appendChild(paragraph)
+          let card = document.createElement('div')
+          card.classList.add('col-12', 'col-sm-6', 'col-md-4', 'col-lg-3', 'col-xxl-2', 'bg-secondary')
+          card.appendChild(div_item)
+          console.log(card);
+          sel_row.appendChild(card)
+        }
+
+      </script>
+      <!-- <div class="col-12 col-md-4 col-lg-3 col-xxl-2">
+        <div class="item">
+          <img src="https://images4.imagebam.com/6f/8d/17/ME24UD0_o.jpg" class="w-100" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, amet.</p>
         </div>
-        <!-- </div> -->
       </div>
-    </div>
-  </div>
-
-
-  <!-- section 2  -->
-  <div class="container-fluid px-0">
-    <div class="container-fluid px-0">
-      <div class="ratio ratio-16x9">
-        <iframe width="1920" height="1080" src="https://www.youtube.com/embed/IuPoMM4yGJo?start=13" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-        <!-- <video width="1920" height="1080" controls>
-            <source src="./video/s2_video.mp4" type="video/mp4" />
-          </video> -->
-      </div>
-    </div>
-
-  </div>
-
-  <!-- section 3  -->
-  <div class="container-fluid px-0 bg-light">
-  </div>
-  <!-- section 4  -->
-  <div class=" container-fluid">
-  </div>
-  <!-- section 5  -->
-
-  <!-- section 6  -->
-  <footer class="bg-dark text-center text-white mt-3">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-      <!-- Section: Social media -->
-      <section>
-        <!-- ig -->
-        <a class=" btn-floating m-1" href="#!" role="button"><img
-            src="https://images4.imagebam.com/5d/d2/d8/ME202PR_o.png" width="30"></i></a>
-
-        <!-- fb -->
-        <a class=" btn-floating m-1" href="https://www.facebook.com/nba" role="button"><img
-            src="https://images4.imagebam.com/7f/54/d2/ME2030Q_o.png" width="30"></i></a>
-
-        <!-- twitter -->
-        <a class=" btn-floating m-1" href="#!" role="button"><img
-            src="https://images4.imagebam.com/69/bc/90/ME20326_o.png" width="30"></i></a>
-
-        <!-- YT -->
-        <a class=" btn-floating m-1" href="https://www.youtube.com/user/NBA" role="button"><img
-            src="https://images4.imagebam.com/bc/3e/04/ME2033B_o.png" width="30"></i></a>
-        </a>
-        <div class="main-footer text-center p-3  ">
-          <p>NBA TOP5 Player © Copyright 20210720 Titor. Jeffrey. JA. All Rights Reserved.</p>
+      <div class="col-12 col-md-4 col-lg-3 col-xxl-2">
+        <div class="item">
+          <img src="https://picsum.photos/300/300?random=2" class="w-100" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, dolore?</p>
         </div>
-      </section>
-      <!-- Section: Social media -->
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 col-xxl-2">
+        <div class="item">
+          <img src="https://picsum.photos/300/300?random=3" class="w-100" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, dolore?</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 col-xxl-2">
+        <div class="item">
+          <img src="https://picsum.photos/300/300?random=4" class="w-100" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, dolore?</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 col-xxl-2">
+        <div class="item">
+          <img src="https://picsum.photos/300/300?random=4" class="w-100" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, dolore?</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 col-xxl-2">
+        <div class="item">
+          <img src="https://picsum.photos/300/300?random=4" class="w-100" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, dolore?</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3 col-xxl-2">
+        <div class="item">
+          <img src="https://picsum.photos/300/300?random=4" class="w-100" alt="">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, dolore?</p>
+        </div>
+      </div> -->
     </div>
-  </footer>
-  <!-- section 7  -->
+  </div>
 
-</body>
 
 </html>

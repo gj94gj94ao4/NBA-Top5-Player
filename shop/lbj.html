@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -225,90 +226,202 @@
         </div>
       </div>
     </common-area>
-  <!--這是主要的內容區塊 -->
-  <div class="container pages">
-    <div class="row text-center mx-0 banner animate-area" style="background-image: url(https://images4.imagebam.com/61/cd/b4/ME22VO0_o.jpg);
-      background-position: 80% 3%;
-      background-repeat: no-repeat;
-      height: 85vh ;
-      min-height: 100px;
-      ">
-
-      <div class="col-6 text-white">
-      </div>
-      <div class="col-6 text-white text-end">
-        <!-- <div class="animate-area"> -->
-        <div class="mx-5 px-10" style="line-height: 40px;">
-          <h1 class="animate-area">Chris Paul</h1>
-          <h1 class="animate-area" style="animation-delay: 0.1s;">克里斯·保羅</h1>
-          <p class="animate-area" style="animation-delay: 0.2s;">出生 1985年5月6日（36歲）</p>
-          <p class="animate-area" style="animation-delay: 0.3s;">身高 6英尺0英寸（1.83米）體重	175磅（79公斤）</p>
-          <p class="animate-area" style="animation-delay: 0.4s;">現效力於NBA鳳凰城太陽。2021年3月22日，對陣洛杉磯湖人時完成生涯第10000次助攻，
-            成為NBA上第6位達成的球員，該場保羅繳出11分10籃板13助攻的大三元成績單( 生涯第16次、本季首次 )，
-            帶領太陽以111:94擊敗湖人。同時也是NBA史上第1位完成20000分+10000次助攻的球員。</p>
-        
-        </div>
-        <!-- </div> -->
-      </div>
-    </div>
-  </div>
 
 
-  <!-- section 2  -->
-  <div class="container-fluid px-0">
-    <div class="container-fluid px-0">
-      <div class="ratio ratio-16x9">
-        <iframe width="1920" height="1080" src="https://www.youtube.com/embed/IuPoMM4yGJo?start=13" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-        <!-- <video width="1920" height="1080" controls>
-            <source src="./video/s2_video.mp4" type="video/mp4" />
-          </video> -->
-      </div>
+
+  <div class="container-fluid" style="margin-top: 100px;">
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="page-1" role="tabpanel" aria-labelledby="page-1-tab"></div>
+      <div class="tab-pane fade" id="page-2" role="tabpanel" aria-labelledby="page-2-tab"></div>
     </div>
 
+    <script>
+      let items = [
+        {// 1
+          imgurl: "https://images4.imagebam.com/ca/03/e5/ME24UMV_o.jpg",
+          name: "",
+
+          description: "NIKE NBA 短袖T恤 Select Series 湖人隊 LeBron James",
+          price: "1,280"
+        },
+        {// 2
+          imgurl: "https://images4.imagebam.com/d6/57/b8/ME24UN7_o.jpg",
+          name: "",
+          description: "NIKE NBA 短袖T恤 HWC 湖人隊 LeBron James",
+          price: "1,280"
+        },
+        {// 3
+          imgurl: "https://images4.imagebam.com/8a/08/92/ME24UPH_o.jpg",
+          name: "",
+          description: "NIKE SWGMN球衣 Earned Edition 湖人隊 LeBron James",
+          price: "2,680"
+        },
+        {// 4
+          imgurl: "https://images4.imagebam.com/d5/97/a8/ME24UUQ_o.jpg",
+          name: "",
+          description: " NIKE SWGMN球衣 Select Series 湖人隊 LeBron James",
+          price: "4,880"
+        },
+        {// 5
+          imgurl: "https://images4.imagebam.com/14/bc/f9/ME24UWM_o.jpg",
+          name: "",
+          description: "NIKE SWGMN球衣 湖人隊 LeBron James",
+          price: "1,876"
+        },
+        {// 6
+          imgurl: "https://images4.imagebam.com/d3/2d/2f/ME24V2C_o.jpg",
+          name: "",
+          description: "NIKE NBA City Edition 青少年球衣 湖人隊 LeBron James",
+          price: "1,666"
+        },
+        {// 7
+          imgurl: "https://images4.imagebam.com/d3/b1/e4/ME24UXQ_o.jpg",
+          name: "",
+          description: "NIKE NBA Statement Edition 幼兒球衣 湖人隊 LeBron James",
+          price: "966"
+        },
+        {// 8
+          imgurl: "https://images4.imagebam.com/89/aa/28/ME24V0E_o.jpg",
+          name: "",
+          description: "NIKE 青少年球衣 湖人隊LeBron James",
+          price: "2,142"
+        },
+        {// 9
+          imgurl: "https://images4.imagebam.com/3c/5f/09/ME24UYK_o.jpg",
+          name: "",
+          description: "NIKE 幼兒球衣 湖人隊 LeBron James",
+          price: "1,242"
+        },
+        {// 10
+          imgurl: "https://images4.imagebam.com/94/27/0d/ME24VWJ_o.jpg",
+          name: "",
+          description: "NIKE 少年復古球衣 騎士隊 08-09 LeBron James",
+          price: "2,980"
+        },
+        {// 11
+          imgurl: "https://images4.imagebam.com/97/67/56/ME24VXF_o.jpg",
+          name: " ",
+          description: "NIKE 幼兒復古球衣 騎士隊 08-09 LeBron James",
+          price: "2,380"
+        },
+        {// 12
+          imgurl: "https://images4.imagebam.com/9f/43/66/ME24VY9_o.jpg",
+          name: "",
+          description: "NIKE 青少年 連帽T恤 湖人隊 LeBron James",
+          price: "1,246"
+        },
+        {// 13
+          imgurl: "https://images4.imagebam.com/9a/11/08/ME24VZY_o.jpg",
+          name: "",
+          description: "NIKE LEBRON XVIII LOW EP 男 籃球鞋 多色",
+          price: "5,200"
+        },
+        {// 14
+          imgurl: "https://images4.imagebam.com/1c/93/38/ME24W25_o.jpg",
+          name: "",
+          description: "NIKE LEBRON XVIII LOW EP 男 籃球鞋 紫",
+          price: "5,200"
+        },
+        {// 15
+          imgurl: "https://images4.imagebam.com/06/96/d9/ME24W2O_o.jpg",
+          name: "",
+          description: "NIKE LEBRON XVIII LOW EP 男 籃球鞋 紅白",
+          price: "5,200"
+        },
+        {// 16
+          imgurl: "https://images4.imagebam.com/e3/7e/95/ME24W3K_o.jpg",
+          name: "",
+          description: "NIKE LEBRON XVIII LOW EP 男 籃球鞋",
+          price: "5,200"
+        },
+        {// 17
+          imgurl: "https://images4.imagebam.com/eb/b0/1a/ME24WZU_o.jpg",
+          name: "",
+          description: "NIKE LEBRON WITNESS V EP 男 籃球鞋",
+          price: "3,200"
+        },
+        {// 18
+          imgurl: "https://images4.imagebam.com/f6/08/75/ME24X22_o.jpg",
+          name: "",
+          description: "NBA Q版娃娃 湖人隊 LeBron James",
+          price: "590"
+        },
+        {// 19
+          imgurl: "https://images4.imagebam.com/c8/39/6e/ME24X2O_o.jpg",
+          name: "",
+          description: "Funko POP NBA 大頭公仔 10吋加大版 湖人隊 LeBron James 黃色",
+          price: "1,119"
+        },
+        {// 20
+          imgurl: "https://images4.imagebam.com/90/c7/68/ME24X3T_o.jpg",
+          name: "",
+          description: "Funko POP NBA 大頭公仔 湖人隊 LeBron James",
+          price: "349"
+        },
+      ]
+      let page1 = document.querySelector('#page-1');
+      let page2 = document.querySelector('#page-2')
+      let row_ = document.createElement('div')
+      let row_2 = document.createElement('div')
+      row_2.classList.add('row', 'gx-3', 'gy-2')
+      row_.classList.add('row', 'gx-3', 'gy-2')
+
+      for (const [index, item] of items.entries()) {
+        let head = document.createElement('h3')
+        head.classList.add('text-center')
+        head.innerText = item.name;
+        let img = document.createElement('img')
+        img.classList.add('w-100')
+        img.src = item.imgurl
+        img.alt = 'image'
+        let paragraph = document.createElement('p')
+        paragraph.innerText = item.description
+        let price = document.createElement('p')
+        price.innerText = `NTD$ ${item.price}`
+        price.style.fontWeight = 'bold'
+        let div_item = document.createElement('div')
+        div_item.classList.add('item', 'p-2')
+        div_item.appendChild(head)
+        div_item.appendChild(img)
+        div_item.appendChild(paragraph)
+        div_item.appendChild(price)
+        let card = document.createElement('div')
+        card.classList.add('col-12', 'col-sm-6', 'col-md-4', 'col-lg-3', 'col-xxl-2')
+        card.appendChild(div_item)
+
+        console.log(card);
+        if (index < 12) {
+          row_.appendChild(card)
+        } else {
+          row_2.appendChild(card)
+        }
+
+
+      }
+      page1.appendChild(row_)
+      page2.appendChild(row_2)
+    </script>
+
+
+
+
   </div>
 
-  <!-- section 3  -->
-  <div class="container-fluid px-0 bg-light">
+
+
+
+  <div class="container-fluid d-flex justify-content-center">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="page-1-tab" data-bs-toggle="pill" data-bs-target="#page-1" type="button"
+          role="tab" aria-controls="page-1" aria-selected="true">1</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="page-2-tab" data-bs-toggle="pill" data-bs-target="#page-2" type="button" role="tab"
+          aria-controls="page-2" aria-selected="false">2</button>
+      </li>
+    </ul>
   </div>
-  <!-- section 4  -->
-  <div class=" container-fluid">
-  </div>
-  <!-- section 5  -->
 
-  <!-- section 6  -->
-  <footer class="bg-dark text-center text-white mt-3">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-      <!-- Section: Social media -->
-      <section>
-        <!-- ig -->
-        <a class=" btn-floating m-1" href="#!" role="button"><img
-            src="https://images4.imagebam.com/5d/d2/d8/ME202PR_o.png" width="30"></i></a>
-
-        <!-- fb -->
-        <a class=" btn-floating m-1" href="https://www.facebook.com/nba" role="button"><img
-            src="https://images4.imagebam.com/7f/54/d2/ME2030Q_o.png" width="30"></i></a>
-
-        <!-- twitter -->
-        <a class=" btn-floating m-1" href="#!" role="button"><img
-            src="https://images4.imagebam.com/69/bc/90/ME20326_o.png" width="30"></i></a>
-
-        <!-- YT -->
-        <a class=" btn-floating m-1" href="https://www.youtube.com/user/NBA" role="button"><img
-            src="https://images4.imagebam.com/bc/3e/04/ME2033B_o.png" width="30"></i></a>
-        </a>
-        <div class="main-footer text-center p-3  ">
-          <p>NBA TOP5 Player © Copyright 20210720 Titor. Jeffrey. JA. All Rights Reserved.</p>
-        </div>
-      </section>
-      <!-- Section: Social media -->
-    </div>
-  </footer>
-  <!-- section 7  -->
-
-</body>
 
 </html>
