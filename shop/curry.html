@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -229,147 +230,179 @@
 
 
   <div class="container-fluid" style="margin-top: 100px;">
-    <div class="row gx-5 gy-2">
-      <script>
-        let items = [
-          {
-            // 1
-            imgurl: "https://images4.imagebam.com/ca/03/e5/ME24UMV_o.jpg",
-            name: "123水壺",
-            description: "可以裝水",
-            price: "999"
-          },
-          {// 2
-            imgurl: "https://images4.imagebam.com/d6/57/b8/ME24UN7_o.jpg",
-            name: "",
-            description: "",
-            price: ""
-          },
-          {// 3
-            imgurl: "https://images4.imagebam.com/8a/08/92/ME24UPH_o.jpg",
-            name: "",
-            description: "",
-            price: ""
-          },
-          {// 4
-            imgurl: "https://images4.imagebam.com/d5/97/a8/ME24UUQ_o.jpg",
-            name: "",
-            description: "",
-            price: ""
-          },
-          {// 5
-            imgurl: "https://images4.imagebam.com/14/bc/f9/ME24UWM_o.jpg",
-            name: "",
-            description: "",
-            price: ""
-          },
-          {// 6
-            imgurl: "https://images4.imagebam.com/6f/8d/17/ME24UD0_o.jpg",
-            name: "",
-            description: "",
-            price: ""
-          },
-          {// 7
-            imgurl: "https://images4.imagebam.com/c1/6a/d1/ME24UWO_o.jpg",
-            name: "",
-            description: "",
-            price: ""
-          },
-          {// 8
-            imgurl: "https://images4.imagebam.com/d3/b1/e4/ME24UXQ_o.jpg",
-            name: "",
-            description: "",
-            price: ""
-          },
-          {// 9
-            imgurl: "https://images4.imagebam.com/f1/66/05/ME24UY8_o.jpg",
-            name: "",
-            description: "",
-            price: ""
-          },
-          {// 10
-            imgurl: "https://images4.imagebam.com/6f/8d/17/ME24UD0_o.jpg",
-            name: "",
-            description: "",
-            price: ""
-          },
-          {// 11
-            imgurl: "https://images4.imagebam.com/6f/8d/17/ME24UD0_o.jpg",
-            name: "",
-            description: "",
-            price: ""
-          },
-          {// 12
-            imgurl: "https://images4.imagebam.com/6f/8d/17/ME24UD0_o.jpg",
-            name: "",
-            description: "",
-            price: ""
-          },
-        ]
-        let sel_row = document.querySelector('body > div.container-fluid > div');
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="page-1" role="tabpanel" aria-labelledby="page-1-tab"></div>
+      <div class="tab-pane fade" id="page-2" role="tabpanel" aria-labelledby="page-2-tab"></div>
+    </div>
 
-        for (const item of items) {
-          let img = document.createElement('img')
-          img.classList.add('w-100')
-          img.src = item.imgurl
-          img.alt = 'image'
-          let paragraph = document.createElement('p')
-          paragraph.innerText = item.description
-          let div_item = document.createElement('div')
-          div_item.classList.add('item')
-          div_item.appendChild(img)
-          div_item.appendChild(paragraph)
-          let card = document.createElement('div')
-          card.classList.add('col-12', 'col-sm-6', 'col-md-4', 'col-lg-3', 'col-xxl-2', 'bg-secondary')
-          card.appendChild(div_item)
-          console.log(card);
-          sel_row.appendChild(card)
+    <script>
+      let items = [
+        {// 1
+          imgurl: "https://images4.imagebam.com/79/8f/93/ME258YQ_o.jpg",
+          name: "",
+          description: "NIKE SWGMN球衣  勇士隊 Stephen Curry",
+          price: "9,980"
+        },
+        {// 2
+          imgurl: "https://images4.imagebam.com/c4/0c/36/ME258Z0_o.jpg",
+          name: "",
+          description: "NIKE NBA 青少年球衣 勇士隊 Stephen Curry",
+          price: "2,580"
+        },
+        {// 3
+          imgurl: "https://images4.imagebam.com/7a/2c/16/ME258Z1_o.jpg",
+          name: "",
+          description: "NIKE SWGMN球衣 勇士隊 Stephen Curry",
+          price: "2,680"
+        },
+        {// 4
+          imgurl: "https://images4.imagebam.com/b7/c2/b8/ME258YR_o.jpg",
+          name: "",
+          description: " NIKE NBA 短袖T恤 勇士隊 Stephen Curry",
+          price: "1,280"
+        },
+        {// 5
+          imgurl: "https://images4.imagebam.com/72/c2/8c/ME258YS_o.jpg",
+          name: "",
+          description: "青少年 短袖上衣 勇士隊 #30 Stephen Curry",
+          price: "1,080"
+        },
+        {// 6
+          imgurl: "https://images4.imagebam.com/07/7e/cc/ME258Z5_o.jpg",
+          name: "",
+          description: "兒童 短袖上衣 勇士隊 #30 Stephen Curry",
+          price: "980"
+        },
+        {// 7
+          imgurl: "https://images4.imagebam.com/c9/0f/03/ME258YU_o.jpg",
+          name: "",
+          description: "NIKE NBA   短袖上衣 勇士隊 Stephen Curry",
+          price: "980"
+        },
+        {// 8
+          imgurl: "https://images4.imagebam.com/9b/3e/55/ME258YW_o.jpg",
+          name: "",
+          description: "NIKE NBA  兒童短袖上衣 勇士隊 Stephen Curry",
+          price: "880"
+        },
+        {// 9
+          imgurl: "https://images4.imagebam.com/00/e8/4d/ME258YT_o.jpg",
+          name: "",
+          description: " NBA 球員印刷 短袖上衣 勇士隊 Stephen Curry",
+          price: "780"
+        },
+        {// 10
+          imgurl: "https://images4.imagebam.com/62/83/2a/ME258YV_o.jpg",
+          name: "",
+          description: "NIKE NBA 勇士隊 背心球衣 Stephen Curry",
+          price: "2,980"
+        },
+        {// 11
+          imgurl: "https://images4.imagebam.com/ae/0f/5c/ME258Z3_o.jpg",
+          name: " ",
+          description: "NIKE NBA 勇士隊 兒童背心球衣 Stephen Curry",
+          price: "2,380"
+        },
+        {// 12
+          imgurl: "https://images4.imagebam.com/1e/97/7e/ME258YZ_o.jpg",
+          name: "",
+          description: "NIKE NBA 復古勇士隊 背心球衣 Stephen Curry",
+          price: "3,980"
+        },
+        {// 13
+          imgurl: "https://images4.imagebam.com/b7/19/87/ME258Z4_o.jpg",
+          name: "",
+          description: "NIKE NBA 復古勇士隊09-10 背心球衣 Stephen Curry",
+          price: "2,980"
+        },
+        {// 14
+          imgurl: "https://images4.imagebam.com/99/a1/ba/ME258YX_o.jpg",
+          name: "",
+          description: "NIKE NBA 兒童復古勇士隊09-10 背心球衣 Stephen Curry",
+          price: "2,680"
+        },
+        {// 15
+          imgurl: "https://images4.imagebam.com/2c/29/ab/ME258Z2_o.jpg",
+          name: "",
+          description: "NIKE NBA 勇士隊12 背心球衣 Stephen Curry",
+          price: "2,100"
+        },
+        {// 16
+          imgurl: "https://images4.imagebam.com/7c/46/ba/ME258YY_o.jpg",
+          name: "",
+          description: "NIKE 勇士隊  連帽T  Stephen Curry",
+          price: "1,780"
+        },
+        {// 17
+          imgurl: "https://images4.imagebam.com/f5/2c/4a/ME258Z6_o.jpg",
+          name: "",
+          description: "Funko POP NBA 大頭公仔 勇士隊 Stephen Curry ",
+          price: "499"
+        },
+        
+      ]
+      let page1 = document.querySelector('#page-1');
+      let page2 = document.querySelector('#page-2')
+      let row_ = document.createElement('div')
+      let row_2 = document.createElement('div')
+      row_2.classList.add('row', 'gx-3', 'gy-2')
+      row_.classList.add('row', 'gx-3', 'gy-2')
+
+      for (const [index, item] of items.entries()) {
+        let head = document.createElement('h3')
+        head.classList.add('text-center')
+        head.innerText = item.name;
+        let img = document.createElement('img')
+        img.classList.add('w-100')
+        img.src = item.imgurl
+        img.alt = 'image'
+        let paragraph = document.createElement('p')
+        paragraph.innerText = item.description
+        let price = document.createElement('p')
+        price.innerText = `NTD$ ${item.price}`
+        price.style.fontWeight = 'bold'
+        let div_item = document.createElement('div')
+        div_item.classList.add('item', 'p-2')
+        div_item.appendChild(head)
+        div_item.appendChild(img)
+        div_item.appendChild(paragraph)
+        div_item.appendChild(price)
+        let card = document.createElement('div')
+        card.classList.add('col-12', 'col-sm-6', 'col-md-4', 'col-lg-3', 'col-xxl-2')
+        card.appendChild(div_item)
+
+        console.log(card);
+        if (index < 12) {
+          row_.appendChild(card)
+        } else {
+          row_2.appendChild(card)
         }
 
-      </script>
-      <!-- <div class="col-12 col-md-4 col-lg-3 col-xxl-2">
-        <div class="item">
-          <img src="https://images4.imagebam.com/6f/8d/17/ME24UD0_o.jpg" class="w-100" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, amet.</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 col-lg-3 col-xxl-2">
-        <div class="item">
-          <img src="https://picsum.photos/300/300?random=2" class="w-100" alt="">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, dolore?</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 col-lg-3 col-xxl-2">
-        <div class="item">
-          <img src="https://picsum.photos/300/300?random=3" class="w-100" alt="">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, dolore?</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 col-lg-3 col-xxl-2">
-        <div class="item">
-          <img src="https://picsum.photos/300/300?random=4" class="w-100" alt="">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, dolore?</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 col-lg-3 col-xxl-2">
-        <div class="item">
-          <img src="https://picsum.photos/300/300?random=4" class="w-100" alt="">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, dolore?</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 col-lg-3 col-xxl-2">
-        <div class="item">
-          <img src="https://picsum.photos/300/300?random=4" class="w-100" alt="">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, dolore?</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 col-lg-3 col-xxl-2">
-        <div class="item">
-          <img src="https://picsum.photos/300/300?random=4" class="w-100" alt="">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, dolore?</p>
-        </div>
-      </div> -->
-    </div>
+
+      }
+      page1.appendChild(row_)
+      page2.appendChild(row_2)
+    </script>
+
+
+
+
+  </div>
+
+
+
+
+  <div class="container-fluid d-flex justify-content-center">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="page-1-tab" data-bs-toggle="pill" data-bs-target="#page-1" type="button"
+          role="tab" aria-controls="page-1" aria-selected="true">1</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="page-2-tab" data-bs-toggle="pill" data-bs-target="#page-2" type="button" role="tab"
+          aria-controls="page-2" aria-selected="false">2</button>
+      </li>
+    </ul>
   </div>
 
 
